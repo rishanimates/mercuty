@@ -1,0 +1,20 @@
+// === TUTORIAL 103: Sounds ===
+// Code multiple sounds simply by creating extra lines 
+// starting with 'new sample', followed by a sound name
+set tempo 120
+list bas [1 0 1 0]
+list bas [0 1 0 1]
+ring myRhythm [1 0 0 1 0 1 0 1]
+//first beat
+new sample kick_vintage time(1/2)
+new sample kick_deep time(1/4) beat(bas)
+
+// new sample snare_min time(4/8 2/1) pan(random) 
+// new sample snare_hvy time(1/4) pan(random)
+
+new sample hat_909_short time(1/4)
+new sample hat_909_open time(1/4) 
+new sample clap_nord time(1/4) beat(bas1)
+
+
+// Try various time() arguments and add extra sounds
